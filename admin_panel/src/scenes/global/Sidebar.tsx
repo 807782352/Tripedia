@@ -1,9 +1,4 @@
-import {
-  Sidebar as ProSidebar,
-  Menu,
-  MenuItem,
-  SubMenu,
-} from "react-pro-sidebar";
+import { Sidebar as ProSidebar, Menu, MenuItem } from "react-pro-sidebar";
 import { IconButton, Box, Typography, useTheme } from "@mui/material";
 import { Link } from "react-router-dom";
 import { tokens } from "../../theme";
@@ -21,7 +16,21 @@ import MapOutlinedIcon from "@mui/icons-material/MapOutlined";
 import { useState } from "react";
 import userImage from "../../assets/user.jpg";
 
-const Item = ({ title, to, icon, selected, setSelected }) => {
+interface ItemProps {
+  title: string;
+  to: string;
+  icon: React.ReactElement;
+  selected: string;
+  setSelected: (value: string) => void;
+}
+
+const Item: React.FC<ItemProps> = ({
+  title,
+  to,
+  icon,
+  selected,
+  setSelected,
+}) => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
 
@@ -29,7 +38,7 @@ const Item = ({ title, to, icon, selected, setSelected }) => {
     <MenuItem
       active={selected === title}
       rootStyles={{
-        color: selected === title ? colors.greenAccent[400] : colors.grey[100],
+        color: selected === title ? colors.grey[100] : colors.grey[100],
         backgroundColor:
           selected === title ? colors.blueAccent[600] : "transparent",
       }}
