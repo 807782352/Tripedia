@@ -4,7 +4,7 @@ import { createTheme } from "@mui/material/styles";
 type Mode = "light" | "dark";
 
 // color design tokens export
-export const tokens = (mode) => ({
+export const tokens = (mode : Mode) => ({
   ...(mode === "dark"
     ? {
         grey: {
