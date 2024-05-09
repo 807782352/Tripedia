@@ -5,6 +5,7 @@ import Topbar from "./scenes/global/Topbar";
 import { Route, Routes } from "react-router-dom";
 import Dashboard from "./scenes/dashboard";
 import Sidebar from "./scenes/global/Sidebar";
+import Team from "./scenes/team";
 
 function App() {
   const [theme, colorMode] = useMode();
@@ -19,7 +20,7 @@ function App() {
             <Topbar />
             <Routes>
               <Route path="/" element={<Dashboard />}></Route>
-              {/* <Route path="/team" element={<Dashboard />}></Route>
+              <Route path="/team" element={<Team />}></Route>
               <Route path="/contacts" element={<Dashboard />}></Route>
               <Route path="/invoice" element={<Dashboard />}></Route>
               <Route path="/form" element={<Dashboard />}></Route>
@@ -27,7 +28,7 @@ function App() {
               <Route path="/pie" element={<Dashboard />}></Route>
               <Route path="/line" element={<Dashboard />}></Route>
               <Route path="/faq" element={<Dashboard />}></Route>
-              <Route path="/geography" element={<Dashboard />}></Route> */}
+              <Route path="/geography" element={<Dashboard />}></Route>
             </Routes>
           </main>
         </div>
