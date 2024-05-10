@@ -80,6 +80,10 @@ const Contacts = () => {
             color: colors.grey[100],
           },
 
+          "& .MuiCheckbox-root": {
+            color: colors.greenAccent[200],
+          },
+
           "& .MuiDataGrid-footerContainer": {
             borderTop: "none",
             backgroundColor: colors.blueAccent[700],
