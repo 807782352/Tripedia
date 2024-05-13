@@ -49,9 +49,16 @@ const BarChart = () => {
         },
         labels: {
           text: {
-            fill: colors.grey[500],  
+            fill: colors.grey[500],
+          },
+        },
+        tooltip: {
+          container: {
+            background: colors.primary[900], 
+            fill: colors.primary[100],
+  
           }
-        }
+        },
       }}
       defs={[
         {
@@ -113,7 +120,7 @@ const BarChart = () => {
       }}
       labelSkipWidth={12}
       labelSkipHeight={12}
-      labelTextColor={{ theme: 'labels.text.fill' }}
+      labelTextColor={{ theme: "labels.text.fill" }}
       legends={[
         {
           dataFrom: "keys",
@@ -139,7 +146,7 @@ const BarChart = () => {
         },
       ]}
       role="application"
-      ariaLabel="Nivo bar chart demo"
+      ariaLabel="Nivo bar chart"
       barAriaLabel={(e) =>
         e.id + ": " + e.formattedValue + " in country: " + e.indexValue
       }
