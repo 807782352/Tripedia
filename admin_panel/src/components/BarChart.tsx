@@ -3,7 +3,7 @@ import { ResponsiveBar } from "@nivo/bar";
 import { tokens } from "../theme";
 import { mockBarData as data } from "../data/mockData.js";
 
-const BarChart = () => {
+const BarChart = ({ isDashboard }) => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
 
@@ -54,46 +54,45 @@ const BarChart = () => {
         },
         tooltip: {
           container: {
-            background: colors.primary[900], 
+            background: colors.primary[900],
             fill: colors.primary[100],
-  
-          }
+          },
         },
       }}
-      defs={[
-        {
-          id: "dots",
-          type: "patternDots",
-          background: "inherit",
-          color: "#38bcb2",
-          size: 4,
-          padding: 1,
-          stagger: true,
-        },
-        {
-          id: "lines",
-          type: "patternLines",
-          background: "inherit",
-          color: "#eed312",
-          rotation: -45,
-          lineWidth: 6,
-          spacing: 10,
-        },
-      ]}
-      fill={[
-        {
-          match: {
-            id: "fries",
-          },
-          id: "dots",
-        },
-        {
-          match: {
-            id: "sandwich",
-          },
-          id: "lines",
-        },
-      ]}
+      // defs={[
+      //   {
+      //     id: "dots",
+      //     type: "patternDots",
+      //     background: "inherit",
+      //     color: "#38bcb2",
+      //     size: 4,
+      //     padding: 1,
+      //     stagger: true,
+      //   },
+      //   {
+      //     id: "lines",
+      //     type: "patternLines",
+      //     background: "inherit",
+      //     color: "#eed312",
+      //     rotation: -45,
+      //     lineWidth: 6,
+      //     spacing: 10,
+      //   },
+      // ]}
+      // fill={[
+      //   {
+      //     match: {
+      //       id: "fries",
+      //     },
+      //     id: "dots",
+      //   },
+      //   {
+      //     match: {
+      //       id: "sandwich",
+      //     },
+      //     id: "lines",
+      //   },
+      // ]}
       borderColor={{
         from: "color",
         modifiers: [["darker", 1.6]],
@@ -104,7 +103,7 @@ const BarChart = () => {
         tickSize: 5,
         tickPadding: 5,
         tickRotation: 0,
-        legend: "country",
+        legend: isDashboard ? undefined : "country",
         legendPosition: "middle",
         legendOffset: 32,
         truncateTickAt: 0,
@@ -113,7 +112,7 @@ const BarChart = () => {
         tickSize: 5,
         tickPadding: 5,
         tickRotation: 0,
-        legend: "food",
+        legend: isDashboard ? undefined : "food",
         legendPosition: "middle",
         legendOffset: -40,
         truncateTickAt: 0,
