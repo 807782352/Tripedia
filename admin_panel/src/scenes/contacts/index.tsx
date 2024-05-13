@@ -53,7 +53,7 @@ const Contacts = () => {
 
   return (
     <Box m="20px">
-      <Header title="Contacts" subtitle="Contacts info for future reference" />
+      <Header title="CONTACTS" subtitle="Contacts info for future reference" />
       <Box
         m="40px 0 0 0"
         height="75vh"
