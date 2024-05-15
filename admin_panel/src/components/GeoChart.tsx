@@ -4,7 +4,7 @@ import { geoFeatures } from "../data/mockGeoFeatures";
 import { useTheme } from "@mui/material";
 import { tokens } from "../theme.js";
 
-const GeoChart = (isDashboard = false) => {
+const GeoChart = ({ isDashboard = false }) => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
 
@@ -52,7 +52,7 @@ const GeoChart = (isDashboard = false) => {
       unknownColor="#666666"
       label="properties.name"
       valueFormat=".2s"
-      projectionScale={isDashboard ? 150 : 40}
+      projectionScale={isDashboard ? 40 : 150}
       projectionTranslation={[0.5, 0.5]}
       projectionRotation={[0, 0, 0]}
       enableGraticule={false}
