@@ -14,6 +14,7 @@ import Bar from "./scenes/bar";
 import Pie from "./scenes/pie";
 import Line from "./scenes/line";
 import Geography from "./scenes/geography";
+import CircleProgess from "./components/CircleProgess";
 
 function App() {
   const [theme, colorMode] = useMode();
