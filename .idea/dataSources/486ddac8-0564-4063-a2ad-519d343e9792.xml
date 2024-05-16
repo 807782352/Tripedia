@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="PostgreSQL - tripedia@localhost">
+  <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.21">
+    <root id="1">
+      <ServerVersion>16.3</ServerVersion>
+      <StartupTime>1715869119</StartupTime>
+    </root>
+    <database id="2" parent="1" name="postgres">
+      <ObjectId>5</ObjectId>
+      <Comment>default administrative connection database</Comment>
+      <Owner>tripedia</Owner>
+    </database>
+    <database id="3" parent="1" name="tripedia">
+      <ObjectId>16384</ObjectId>
+      <Owner>tripedia</Owner>
+      <Current>1</Current>
+    </database>
+    <schema id="4" parent="3" name="information_schema">
+      <ObjectId>13212</ObjectId>
+      <StateNumber>530</StateNumber>
+      <Owner>tripedia</Owner>
+    </schema>
+    <schema id="5" parent="3" name="pg_catalog">
+      <ObjectId>11</ObjectId>
+      <Comment>system catalog schema</Comment>
+      <StateNumber>524</StateNumber>
+      <Owner>tripedia</Owner>
+    </schema>
+    <schema id="6" parent="3" name="public">
+      <ObjectId>2200</ObjectId>
+      <Comment>standard public schema</Comment>
+      <StateNumber>524</StateNumber>
+      <Owner>pg_database_owner</Owner>
+      <Current>1</Current>
+    </schema>
+  </database-model>
+</dataSource>

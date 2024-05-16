@@ -1,0 +1,7 @@
+com\tripedia\tripedia\controller\MemberController.class
+com\tripedia\tripedia\entity\Member.class
+com\tripedia\tripedia\dao\MemberDao.class
+com\tripedia\tripedia\service\MemberService.class
+com\tripedia\tripedia\TripediaApplication.class
+com\tripedia\tripedia\dao\MemberRepository.class
+com\tripedia\tripedia\service\MemberJPADataAccessService.class

@@ -1,0 +1,7 @@
+D:\vs_workspace\tripedia\backend\tripedia\src\main\java\com\tripedia\tripedia\dao\MemberDao.java
+D:\vs_workspace\tripedia\backend\tripedia\src\main\java\com\tripedia\tripedia\TripediaApplication.java
+D:\vs_workspace\tripedia\backend\tripedia\src\main\java\com\tripedia\tripedia\service\MemberJPADataAccessService.java
+D:\vs_workspace\tripedia\backend\tripedia\src\main\java\com\tripedia\tripedia\dao\MemberRepository.java
+D:\vs_workspace\tripedia\backend\tripedia\src\main\java\com\tripedia\tripedia\entity\Member.java
+D:\vs_workspace\tripedia\backend\tripedia\src\main\java\com\tripedia\tripedia\service\MemberService.java
+D:\vs_workspace\tripedia\backend\tripedia\src\main\java\com\tripedia\tripedia\controller\MemberController.java
